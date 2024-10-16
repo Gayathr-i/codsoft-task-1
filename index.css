@@ -1,0 +1,150 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    scroll-behavior: smooth;
+}
+#hero {
+    background: url('f.jpeg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Transbox Styling */
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.6); /* Black with 60% opacity */
+    padding: 30px;
+    border-radius: 10px;
+    color: #fff; /* Make the text white for contrast */
+    max-width: 80%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Optional shadow for a better effect */
+}
+
+/* Adjust the font and padding for the content */
+.hero-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Animated Ingredients */
+.ingredient {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    animation: float 6s infinite ease-in-out;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+.menu1{
+    text-align: center;
+    background-color: rgb(215, 215, 212);
+    padding: 5px;
+}
+.menu-items {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap onto multiple rows */
+    justify-content: center; /* Center the items */
+    margin: 10px 0;
+    background-color: rgb(239, 240, 240); /* Margin around the menu items */
+}
+
+.menu-item {
+    flex: 0 1 calc(25% - 20px); /* Take 25% of the container width minus margin */
+    margin: 10px; /* Margin around each item */
+    box-sizing: border-box; /* Ensures padding and margin are included in the width */
+}
+
+/* Hover Animations for Menu Items */
+.menu-item img {
+    height: 200px; /* Set a consistent height for images */
+    width: 100%; /* Make images responsive */
+    object-fit: cover; /* Maintain aspect ratio */
+    transition: transform 0.3s;
+    border-style: groove; /* Animation on hover */
+}
+
+
+.menu-item img:hover {
+    transform: scale(1.05);
+}
+.menu-item h3 {
+    margin-top: 10px; /* Space between image and title */
+}
+/* CTA Button */
+.cta-button {
+    background-color: #e4c29c;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 40px;
+    transition:transform 0.3s;
+    color: black;
+    text-decoration: none;
+}
+
+.cta-button:hover {
+    background-color:rgb(232, 147, 77);
+}
+
+#contact{
+    text-align: center;
+    margin: 10px;
+    
+}
+
+#contact form{
+    display:block;
+    width: 40%;
+    margin: 0 auto;
+    
+}
+#contact input,
+#contact textarea {
+    width: 100%; /* Make inputs and textarea full width of the form */
+    padding: 10px; /* Add some padding */
+    margin: 10px 0; /* Add margin for spacing */
+    border: 1px solid #ccc; /* Add border */
+    border-radius: 5px; /* Add rounded corners */
+}
+
+#contact button {
+    background-color: #ff5733; /* Button background color */
+    color: #fff; /* Button text color */
+    padding: 10px 20px; /* Button padding */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Add rounded corners */
+    cursor: pointer; /* Change cursor to pointer */
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+#contact button:hover {
+    background-color: rgb(253, 181, 162); /* Change background color on hover */
+}
+footer{
+    background-color: black;
+    color:white;
+    padding:2px;
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+}
